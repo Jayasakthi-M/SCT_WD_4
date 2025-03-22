@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px gray;
+}
+
+h1 {
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button, select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.status {
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.pending { background-color: #ffc107; color: black; }
+.in-progress { background-color: #17a2b8; color: white; }
+.completed { background-color: #28a745; color: white; text-decoration: line-through; }
+
+.actions button {
+    margin-left: 5px;
+    padding: 6px;
+    font-size: 12px;
+}
+
+.delete-btn { background-color: #dc3545; }
+.delete-btn:hover { background-color: #c82333; }
+
+.edit-btn { background-color: #007bff; }
+.edit-btn:hover { background-color: #0056b3; }
